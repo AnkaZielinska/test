@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'AgfaRotis';
+    src: url('fonts/Agfa-Rotis.ttf') format('truetype'),
+    url('fonts/Agfa-Rotis-bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'AgfaRotisBold';
+    src: url('fonts/Agfa-Rotis-bold.ttf') format('truetype'),
+    url('fonts/Agfa-Rotis.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'AgfaRotisItalic';
+    src: url('fonts/Agfa-Rotis-italic.ttf') format('truetype'),
+    url('fonts/Agfa-Rotis-italic.woff') format('woff');
+}
+
+body {
+    font-size: 14px;
+    color: #333333;
+    background-color: #FFE1AD;
+}
+
+.panel {
+    margin-bottom: 0px;
+    font-family: "AgfaRotisBold", Verdana, sans-serif;
+}
+
+.down {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 15px;
+    background-color: #fbfbfb;
+    font-family: "AgfaRotisBold";
+}
+
+.container {
+    background-color: #ffffff;
+}
+
+.down > .container > .box /*.row*/ {
+    margin-right: 200px;
+    margin-bottom: 30px;
+    background-color: #dff3fd;
+}
+
+.down > .container > .box > .row > .nick-and-question {
+    margin-top: 30px;
+}
+
+.down > .container > .box > .row > .nick-and-question > a:first-child {
+    color: #006699;
+    font-weight: bold;
+    font-family: AgfaRotisBold, sans-serif;
+}
+
+.down > .container > .box > .row > .nick-and-question > a:last-child {
+    color: #006699;
+    font-weight: bold;
+    font-family: "AgfaRotisItalic", sans-serif;
+}
+
+.down > .container > .box > .row > .asking {
+    margin-right: 150px;
+}
+
+.down > .container > .box > .row > .activities {
+    text-align: center;
+
+    background-color: #ffffff;
+}
+
+.down > .container > .box > .row > .activities > .row > .more-activities {
+    background-color: #ffffff;
+    font-weight: bold;
+    font-family: "AgfaRotisItalic", sans-serif;
+    text-align: end;
+    margin-top: 30px;
+    margin-left: 26px;
+}
+
+.down > .container > .box > .row > .activities > .row > .commented-answered {
+    background-color: #eeeeee;
+    font-family: "AgfaRotis", sans-serif;
+    text-align: end;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 24px;
+
+}
+
+.panel > .container > .row > .questions {
+text-transform: uppercase;
+font-family: AgfaRotisBold, sans-serif;
+font-size: 36px;
+font-weight: bold;
+}
+
+.panel > .container > .row > .questions > span {
+    font-size: 30px;
+    color: #0074d9;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.panel > .container > .row > .col-md-2 > .radio > input[type=radio] {
+    display: none;
+}
+
+.panel > .container > .row > .col-md-2 > .radio > input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #47433d;
+    font-size: 23px;
+    text-align: center;
+    line-height: 14px;
+    position: relative;
+}
+
+.panel > .container > .row > .col-md-2 > .radio > label:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 100px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #c3c0bb;
+    position: relative;
+}
+
+.panel > .container > .row > .col-md-2 > .radio > label {
+    font-size: 17px;
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.panel > .container > .row > .sort {
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+    padding-top: 22px;
+    font-family: AgfaRotisItalic, sans-serif;
+}
+
+.panel > .container > .row > .sort > a:first-child {
+    color: #918d86;
+    border-bottom: 1px grey dotted;
+}
+
+.panel > .container > .row > .sort > a:last-child {
+    color: #006699;
+    font-weight: bold;
+    font-family: AgfaRotisBold, sans-serif;
+}
+
+.panel > .container > .row > .col-md-10 > input[type=search] {
+    width:100%;
+}
+
+.panel > .container > .row > .search > .form-group > input[type=search] {
+    margin-top: 15px;
+    background-color: #fbfbfb;
+    height: 40px;
+    outline: none;
+    border-width: 1px;
+    border-color: #cbc9c9;
+    border-radius: 3px;
+}
+
+.panel > .container > .row > .col-md-2 > button {
+    margin-top: 15px;
+    background-color: #fff;
+    height: 40px;
+    font-size: 18px;
+    width: 100%;
+    outline: none;
+    color: #e0e1e2;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-color: #e0e1e2;
+    border-radius: 3px;
+}
+
+.img-circle {
+
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.img-circle-box {
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.img-circle-ca-box {
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+}

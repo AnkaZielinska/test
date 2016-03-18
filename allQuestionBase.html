@@ -1,0 +1,129 @@
+<!doctype html>
+<html ng-app="ui.bootstrap.demo">
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.2.4.js"></script>
+    <script src="allQuestionBaseController.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="core.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="panel">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 questions">
+            Questions <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+                <div class="radio">
+                    <input type="radio" name="questionView" id="myShelf" value="myShelf" checked>
+                        <label for="myShelf">
+                            My shelf
+                        </label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="radio">
+                    <input type="radio" name="questionView" id="allQuestions" value="allQuestions">
+                        <label for="allQuestions">
+                            All questions
+                        </label>
+                </div>
+            </div>
+
+                <div class="col-md-2 sort">Sort by: <a href="#">recent</a> or <a href="#">hot</a> </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 search">
+                <div class="form-group">
+                    <input class="form-control" type="search" name="search" placeholder="Search questions">
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <button class="btn btn-default" type="submit" name="searchQuestion">Search</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="down">
+    <div class="container">
+                <div class="col-md-10 box">
+                    <div class="row">
+                        <div class="col-md-2 form-group">
+                            <img src="images/green.png" class="img-circle-box">
+                        </div>
+
+                        <div class="col-md-10 nick-and-question">
+                            <a href="#">GreenUser</a> IS ASKING:
+                            <br>
+                            <a href="#">Why so green?</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2 form-group">
+                            ASKED
+                        </div>
+
+                        <div class="col-md-10 activities">
+                            <div class="row">
+                                <div class="col-md-2 more-activities">
+                                    3
+                                    <br>
+                                    more activities
+                                </div>
+
+                                <div class="col-md-2 commented-answered">
+                                    <img src="images/green.png" class="img-circle-ca-box">
+                                    COMMENTED
+
+                                </div>
+
+                                <div class="col-md-2 commented-answered">
+                                    <img src="images/green.png" class="img-circle-box">
+                                    COMMENTED
+
+                                </div>
+
+                                <div class="col-md-2 commented-answered">
+                                    <img src="images/green.png" class="img-circle-box">
+                                    COMMENTED
+                                </div>
+
+                                <div class="col-md-2 commented-answered">
+                                    <img src="images/green.png" class="img-circle-box">
+                                    ANSWERED
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    1 related discussion
+                    6 peers involved
+                    3 conversations
+                </div>
+    </div>
+
+</div>
+
+
+        <div class="col-sm-6">
+            <div ng-controller="ModalController">
+                <button type="button" class="btn btn-default" ng-click="open()">test</button>
+            </div>
+        </div>
+
+</body>
+</html>
